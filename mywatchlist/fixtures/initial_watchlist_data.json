@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk":1,
+        "fields":{
+            "watched": "False",
+            "title": "Bull Durham",
+            "rating": 3.5,
+            "release_date": 1988,
+            "review": "Crash Davis, a veteran catcher in baseball, is hired to coach Ebby Calvin 'Nuke' LaLoosh, a dim-witted beginner. However, both of them soon get involved with Annie, a groupie who loves the sport."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk":2,
+        "fields":{
+            "watched": "False",
+            "title": "Top Gun",
+            "rating": 3.5,
+            "release_date": 1986,
+            "review": "As students at the United States Navy's elite fighter weapons school compete to be best in the class, one daring young pilot learns a few things from a civilian instructor that are not taught in the classroom."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk":3,
+        "fields":{
+            "watched": "False",
+            "title": "Night at the Museum: Battle of the Smithsonian",
+            "rating": 3,
+            "release_date": 2009,
+            "review": "Larry Daley has to infiltrate the Smithsonian Institution to rescue Jedediah and Octavius after they are accidentally shipped there along with a few artefacts."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk":4,
+        "fields":{
+            "watched": "False",
+            "title": "Weathering with You",
+            "rating": 3.8,
+            "release_date": 2019,
+            "review": "In Tokyo, a runaway high school student facing financial struggles ends up with a job at a small-time publisher. One day, he meets a young girl who has the ability to control the weather."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk":5,
+        "fields":{
+            "watched": "False",
+            "title": "Mencuri Raden Saleh",
+            "rating": 4.1,
+            "release_date": 2022,
+            "review": "A group plans to steal a priceless historical painting 'The Arrest of Prince Diponegoro' by Raden Saleh from the Presidential Palace."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk":6,
+        "fields":{
+            "watched": "False",
+            "title": "Nope",
+            "rating": 3.5,
+            "release_date": 2022,
+            "review": "The residents of a lonely gulch in inland California bear witness to an uncanny and chilling discovery."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk":7,
+        "fields":{
+            "watched": "False",
+            "title": "Everything Everywhere All at Once",
+            "rating": 4,
+            "release_date": 2022,
+            "review": "An aging Chinese immigrant is swept up in an insane adventure, in which she alone can save the world by exploring other universes connecting with the lives she could have led."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk":8,
+        "fields":{
+            "watched": "False",
+            "title": "Doctor Strange in the Multiverse of Madness",
+            "rating": 3.5,
+            "release_date": 2022,
+            "review": "Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to battle multiple threats, including other-universe versions of himself, which threaten to wipe out millions across the multiverse. They seek help from Wanda the Scarlet Witch, Wong and others."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk":9,
+        "fields":{
+            "watched": "False",
+            "title": "Back to the Future",
+            "rating": 4.2,
+            "release_date": 1985,
+            "review": "Marty McFly, a 17-year-old high school student, is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk":10,
+        "fields":{
+            "watched": "False",
+            "title": "The Shining",
+            "rating": 4.2,
+            "release_date": 1980,
+            "review": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future."
+        }
+    }
+]
