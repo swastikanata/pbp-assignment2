@@ -6,8 +6,10 @@ from mywatchlist.models import MyWatchList
 # Create your views here.
 def show_watchlist_html(request):
     data = MyWatchList.objects.all()
+    watched_more_movies = MyWatchList.objects.filter(watched=True).count() >= MyWatchList.objects.filter(watched=False).count()
     context = {
         'watchlist': data,
+        'watched_more': watched_more_movies,
         'name': 'Made Swastika Nata Negara',
         'id' : '2106630095',
     }

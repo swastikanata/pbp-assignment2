@@ -4,11 +4,8 @@
 
   <h1>Assignment 3</h1>
 
-  <h5>Name: </h5>
-  <p>{{name}}</p>
-
-  <h5>Student ID: </h5>
-  <p>{{id}}</p>
+  <p>Name: {{name}}</p>
+  <p>Student ID: {{id}}</p>
 
   <table>
     <tr>
@@ -18,7 +15,7 @@
       <th>Release Date</th>
       <th>Review</th>
     </tr>
-   
+
     {% for movie in watchlist %}
       <tr>
         <td>{{movie.title}}</td>
@@ -29,5 +26,10 @@
       </tr>
     {% endfor %}
   </table>
-
+  <br>
+  {% if watched_more %}
+    <p>Congratulations, you have watched movies a lot!</p>
+  {% else %}
+    <p>Woah, you have not much watched movies!</p>
+  {% endif %}
  {% endblock content %}
