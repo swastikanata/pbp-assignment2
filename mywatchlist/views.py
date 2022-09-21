@@ -4,6 +4,14 @@ from django.core import serializers
 from mywatchlist.models import MyWatchList
 
 # Create your views here.
+
+def show_watchlist_index(request):
+    watched_more_movies = MyWatchList.objects.filter(watched=True).count() >= MyWatchList.objects.filter(watched=False).count()
+    context = {
+        'watched_more': watched_more_movies,
+    }
+    return render(request, "watchlist_index.html", context)
+
 def show_watchlist_html(request):
     data = MyWatchList.objects.all()
     watched_more_movies = MyWatchList.objects.filter(watched=True).count() >= MyWatchList.objects.filter(watched=False).count()

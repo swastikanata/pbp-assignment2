@@ -5,20 +5,20 @@
         "fields":{
             "watched": "False",
             "title": "Bull Durham",
-            "rating": 3.5,
-            "release_date": 1988,
-            "review": "Crash Davis, a veteran catcher in baseball, is hired to coach Ebby Calvin 'Nuke' LaLoosh, a dim-witted beginner. However, both of them soon get involved with Annie, a groupie who loves the sport."
+            "rating": 4,
+            "release_date": "1988-06-19",
+            "review": "Is Bull Durham the greatest sports movie ever made? Hey, no argument from me."
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk":2,
         "fields":{
-            "watched": "False",
-            "title": "Top Gun",
-            "rating": 3.5,
-            "release_date": 1986,
-            "review": "As students at the United States Navy's elite fighter weapons school compete to be best in the class, one daring young pilot learns a few things from a civilian instructor that are not taught in the classroom."
+            "watched": "True",
+            "title": "Top Gun: Maverick",
+            "rating": 5,
+            "release_date": "2022-05-27",
+            "review": "Brings Maverick's story full circle in a satisfying manner that adds depth and dimension to its predecessor, but still tells a story that's all its own."
         }
     },
     {
@@ -28,19 +28,19 @@
             "watched": "False",
             "title": "Night at the Museum: Battle of the Smithsonian",
             "rating": 3,
-            "release_date": 2009,
-            "review": "Larry Daley has to infiltrate the Smithsonian Institution to rescue Jedediah and Octavius after they are accidentally shipped there along with a few artefacts."
+            "release_date": "2009-05-22",
+            "review": "The result is pretty much a free-form traffic jam in which everyone fights everyone else."
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk":4,
         "fields":{
-            "watched": "False",
-            "title": "Weathering with You",
-            "rating": 3.8,
-            "release_date": 2019,
-            "review": "In Tokyo, a runaway high school student facing financial struggles ends up with a job at a small-time publisher. One day, he meets a young girl who has the ability to control the weather."
+            "watched": "True",
+            "title": "Kimi no Na Nawa",
+            "rating": 5,
+            "release_date": "2017-04-07",
+            "review": "Impressive cinematic touches, from time-lapse sequences to stunning match shots, with the crisp and nuanced animation adding to the compelling nature of the story."
         }
     },
     {
@@ -49,20 +49,20 @@
         "fields":{
             "watched": "False",
             "title": "Mencuri Raden Saleh",
-            "rating": 4.1,
-            "release_date": 2022,
-            "review": "A group plans to steal a priceless historical painting 'The Arrest of Prince Diponegoro' by Raden Saleh from the Presidential Palace."
+            "rating": 4,
+            "release_date": "2022-08-25",
+            "review": "Looks like an interesting Indonesian film."
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk":6,
         "fields":{
-            "watched": "False",
-            "title": "Nope",
-            "rating": 3.5,
-            "release_date": 2022,
-            "review": "The residents of a lonely gulch in inland California bear witness to an uncanny and chilling discovery."
+            "watched": "True",
+            "title": "Get Out",
+            "rating": 5,
+            "release_date": "2017-02-24",
+            "review": "This brilliantly provocative first feature from comic turned writer-director Jordan Peele proves that the best way to get satire to a mass audience is to call it horror."
         }
     },
     {
@@ -72,8 +72,8 @@
             "watched": "False",
             "title": "Everything Everywhere All at Once",
             "rating": 4,
-            "release_date": 2022,
-            "review": "An aging Chinese immigrant is swept up in an insane adventure, in which she alone can save the world by exploring other universes connecting with the lives she could have led."
+            "release_date": "2022-04-08",
+            "review": "It's absurd and wild and wonderful, and will probably make you cry."
         }
     },
     {
@@ -82,20 +82,20 @@
         "fields":{
             "watched": "False",
             "title": "Doctor Strange in the Multiverse of Madness",
-            "rating": 3.5,
-            "release_date": 2022,
-            "review": "Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to battle multiple threats, including other-universe versions of himself, which threaten to wipe out millions across the multiverse. They seek help from Wanda the Scarlet Witch, Wong and others."
+            "rating": 4,
+            "release_date": "2022-05-06",
+            "review": "It might be Marvel's multiverse, but Doctor Strange in the Multiverse of Madness is Raimi's plaything. And we wouldn't want it any other way."
         }
     },
     {
         "model": "mywatchlist.mywatchlist",
         "pk":9,
         "fields":{
-            "watched": "False",
-            "title": "Back to the Future",
-            "rating": 4.2,
-            "release_date": 1985,
-            "review": "Marty McFly, a 17-year-old high school student, is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown."
+            "watched": "True",
+            "title": "Ready Player One",
+            "rating": 4,
+            "release_date": "2018-04-05",
+            "review": "A heckin fun movie, full of stunning action sequences and laughs and winks at the kids who grew up watching Back to the Future and Jurassic Park and E.T. and Indiana Jones."
         }
     },
     {
@@ -104,9 +104,9 @@
         "fields":{
             "watched": "False",
             "title": "The Shining",
-            "rating": 4.2,
-            "release_date": 1980,
-            "review": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future."
+            "rating": 4,
+            "release_date": "2007-10-23",
+            "review": "The classic Stanley Kubrick film isn't just scary - it is also, in its own odd way, defined by a hopeful perspective on life and death."
         }
     }
 ]

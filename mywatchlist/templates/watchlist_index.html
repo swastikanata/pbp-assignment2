@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+   <div class="container">
+    <div>
+        <h1 style="text-align: center;">Assignment 3</h1>
+        <h2 style="text-align: center;">My Watchlist</h2>
+        {% if watched_more %}
+          <p>Congratulations, you have watched movies a lot!</p>
+        {% else %}
+          <p>Woah, you have not watched much movies!</p>
+        {% endif %}
+        <div class="link-container">
+          <a href="/mywatchlist/html">HTML</a>
+          <a href="/mywatchlist/xml">XML</a>
+          <a href="/mywatchlist/json">JSON</a>
+        </div>
+    </div>
+   </div>
+ {% endblock content %}

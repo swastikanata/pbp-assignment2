@@ -2,10 +2,7 @@
 
  {% block content %}
 
-  <h1>Assignment 3</h1>
-
-  <p>Name: {{name}}</p>
-  <p>Student ID: {{id}}</p>
+  <h1>My Watchlist</h1>
 
   <table>
     <tr>
@@ -27,9 +24,4 @@
     {% endfor %}
   </table>
   <br>
-  {% if watched_more %}
-    <p>Congratulations, you have watched movies a lot!</p>
-  {% else %}
-    <p>Woah, you have not much watched movies!</p>
-  {% endif %}
  {% endblock content %}
