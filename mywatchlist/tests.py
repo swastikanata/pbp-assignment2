@@ -8,6 +8,12 @@ class TestViews(TestCase):
     def setUp(self):
         self.clent = Client()
         
+    def test_views(self):
+        url = reverse('mywatchlist:show_watchlist',)
+        response = self.client.get(url)
+
+        self.assertEqual(response.status_code, 200)
+    
     def test_views_html(self):
         url = reverse('mywatchlist:show_watchlist_html',)
         response = self.client.get(url)
