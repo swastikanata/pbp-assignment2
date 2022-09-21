@@ -21,9 +21,4 @@ class Migration(migrations.Migration):
                 ]
             ),
         ),
-        migrations.AlterField(
-            model_name="mywatchlist",
-            name="release_date",
-            field=models.DateField(),
-        ),
     ]
