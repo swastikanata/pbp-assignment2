@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Add Task</title>
+{% endblock meta %}
+
+{% block content %}
+
+<div>
+
+    <h1>Add Task</h1>
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>Title: </td>
+                <td><input type="text" name="title" placeholder="Title" class="form-control" required></td>
+            </tr>
+                    
+            <tr>
+                <td>Description: </td>
+                <td><input type="text" name="description" placeholder="Description" class="form-control" required></td>
+            </tr>
+
+            <tr>
+                <td><button><a href="{% url 'todolist:show_todolist' %}">Cancel</a></button></td>
+                <td><input class="btn submit_btn" type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}     
+
+</div>
+
+{% endblock content %}

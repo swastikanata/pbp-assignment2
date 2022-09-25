@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+    {% block meta %}
+    <title>{{username}}'s Todo List</title>
+    {% endblock meta %}    
+    {% block content %}
+
+        <h1>{{username}}'s Todo List</h1>
+        <table>
+            <tr>
+            <th>Date Created</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Action</th>
+            </tr>
+
+            {% for todo in todolist %}
+            <tr id={{todo.pk}}>
+                <td>{{todo.date}}</td>
+                <td>{{todo.title}}</td>
+                <td>{{todo.description}}</td>
+                <td>{{todo.is_finished | yesno:"Finished, Unfinished"}}</td>
+                <td>
+                    <button>
+                        <a href="{% url 'todolist:update_todolist' todo.pk %}">{{todo.is_finished | yesno:"Mark as Unfinished, Mark as Finished"}}</a>
+                    </button>
+                    <button>
+                        <a href="{% url 'todolist:delete_todolist' todo.pk %}">Delete</a>
+                    </button>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <button><a href="{% url 'todolist:create_task' %}">Add New Task</a></button>
+        <button><a href="{% url 'todolist:logout_todolist' %}">Logout</a></button>
+    {% endblock content %}
