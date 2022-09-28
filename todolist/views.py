@@ -68,12 +68,14 @@ def logout_todolist(request):
     response = HttpResponseRedirect(reverse('todolist:login_todolist'))
     return response
 
+@login_required(login_url='/todolist/login/')
 def update_todolist(request, id):
     task = Task.objects.get(user=request.user, pk=id)
     task.is_finished = not task.is_finished
     task.save()
     return redirect("todolist:show_todolist")
 
+@login_required(login_url='/todolist/login/')
 def delete_todolist(request, id):
     task = Task.objects.get(user=request.user, pk=id)
     print(id)
