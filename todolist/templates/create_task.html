@@ -1,43 +1,52 @@
 {% extends 'base.html' %}
 
 {% block meta %}
-<title>Add Task</title>
+<title>Create Task</title>
 {% endblock meta %}
 
 {% block content %}
 
-<div>
+<div class="flex items-stretch bg-gray-100 min-h-screen font-mono">
+<div class = "flex items-center w-screen h-screen" >
+    <div class="flex flex-col justify-center items-center w-full">
 
-    <h1>Add Task</h1>
+    
+    <h1 class="text-3xl font-semibold">Create Task</h1>
 
-    <form method="POST" action="">
-        {% csrf_token %}
-        <table>
-            <tr>
-                <td>Title: </td>
-                <td><input type="text" name="title" placeholder="Title" class="form-control" required></td>
-            </tr>
-                    
-            <tr>
-                <td>Description: </td>
-                <td><input type="text" name="description" placeholder="Description" class="form-control" required></td>
-            </tr>
+    <div class="mt-6 bg-white p-10 border rounded-lg border-gray-400 max-w-lg">
+        <form method="POST" action="">
+            {% csrf_token %}
+            
+            <div>
+                <label class="">Title</label>
+                <input type="text" name="title" placeholder="Title" required class="form-control border rounded-lg border-gray-400 w-full">
+            </div>
+                
+            
+            <div class="mt-3">
+                <label>Description</label>
+                <textarea rows="5" name="description" placeholder="Description" required class="form-control border rounded-lg border-gray-400 w-full"></textarea>
+            </div>    
+            
 
-            <tr>
-                <td><button><a href="{% url 'todolist:show_todolist' %}">Cancel</a></button></td>
-                <td><input class="btn submit_btn" type="submit" value="Submit"></td>
-            </tr>
-        </table>
-    </form>
+            {% if messages %}
+            <ul class="mt-3">
+                {% for message in messages %}
+                    <li class="">{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}   
 
-    {% if messages %}
-        <ul>
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}     
-
+            <div class="flex flex-row justify-center mt-4 py-2">
+                
+                <button class="bg-white hover:bg-gray-100 text-black py-2 w-full border-gray-400 border rounded-lg font-semibold text-white mr-3" type="button"><a class="w-full inline-block" href="{% url 'todolist:show_todolist' %}">Cancel</a></button>
+                <button class="btn submit_bt bg-green-600 hover:bg-green-700 py-2 w-full border-none rounded-lg font-semibold text-white" type="submit" value="Submit">Submit</button>
+            </div>
+        </form>
+        
+    </div>
+    </div>
+</div>
 </div>
 
 {% endblock content %}
